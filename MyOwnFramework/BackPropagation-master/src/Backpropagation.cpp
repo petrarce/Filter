@@ -55,7 +55,7 @@ double Backpropagation::train(Pattern & inPattern)
 
     backPropagate();
 
-    updateWeights();
+    //updateWeights();
 
     calculateError();
     return lastError;
