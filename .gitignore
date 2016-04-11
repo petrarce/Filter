@@ -3,3 +3,4 @@ OpenNN/*
 mxnet/*
 caffe/*
 *autosave
+*.pro.user
