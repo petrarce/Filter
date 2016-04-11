@@ -34,6 +34,7 @@ void my_GraphicsView::dropEvent(QDropEvent *event)
 			qDebug()<<pixmap->load(url.path());
 			qDebug()<<url.path();
 			scene->addPixmap(*pixmap);
+            emit transmitImage(pixmap->toImage());
 		}
 	}
 	qDebug()<<"my_graphicsview dropEvent";

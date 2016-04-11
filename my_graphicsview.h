@@ -12,6 +12,7 @@
 
 class my_GraphicsView : public QGraphicsView
 {
+    Q_OBJECT
 	public:
 
 		my_GraphicsView(QWidget *parent);
@@ -23,6 +24,9 @@ class my_GraphicsView : public QGraphicsView
 		void dragLeaveEvent(QDragLeaveEvent *event);
 		void dragEnterEvent(QDragEnterEvent *event);
 		void dropEvent(QDropEvent *event);
+    signals:
+        void transmitImage(QImage image);
+
 };
 
 #endif // MY_GRAPHICSVIEW_H

@@ -14,9 +14,18 @@ TEMPLATE = app
 
 SOURCES += main.cpp\
         mainwindow.cpp \
-    my_graphicsview.cpp
+    my_graphicsview.cpp \
+    MyOwnFramework/BackPropagation-master/src/Backpropagation.cpp \
+    MyOwnFramework/BackPropagation-master/src/Layer.cpp \
+    MyOwnFramework/BackPropagation-master/src/Neuron.cpp \
+    MyOwnFramework/BackPropagation-master/src/Pattern.cpp
 
 HEADERS  += mainwindow.h \
-    my_graphicsview.h
+    my_graphicsview.h \
+    MyOwnFramework/BackPropagation-master/src/Backpropagation.h \
+    MyOwnFramework/BackPropagation-master/src/Layer.h \
+    MyOwnFramework/BackPropagation-master/src/Neuron.h \
+    MyOwnFramework/BackPropagation-master/src/Pattern.h \
+    MyOwnFramework/BackPropagation-master/src/Sigmoid.h
 
 FORMS    += mainwindow.ui
